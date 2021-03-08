@@ -1,7 +1,11 @@
-import { ajax } from './components/ajax.js';
-import { asyncData } from './components/asyncData.js';
-import { people } from './components/people.js';
-
-const url = 'https://raulynas.github.io/12-ajax/api/users.json';
+// import { people } from './components/people.js';
+// import { ajax } from './components/ajax.js';
 // ajax('GET', url, people);
-asyncData('GET', url, people);
+
+// import { asyncData } from './components/asyncData.js';
+// asyncData('GET', url, people);
+
+import { asyncPeople } from './components/asyncPeople.js';
+const url = 'https://raulynas.github.io/12-ajax/api/users.json';
+
+asyncPeople('GET', url);
